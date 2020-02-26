@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="azulApp">#3F51B5</color>
+    <color name="laranjaLogin">#FF5252</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinzaBotao">#8492A6</color>
+    <color name="preto">#000000</color>
+</resources>

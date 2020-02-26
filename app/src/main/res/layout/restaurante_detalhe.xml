@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagemRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/tony" />
+
+            <TextView
+                android:id="@+id/nomeRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tony Roma's"
+                android:textColor="@color/preto"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/enderecoRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
+                android:textColor="@color/cinzaBotao"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/horarioRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha às 22:00"
+                android:textColor="@color/cinzaBotao"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
