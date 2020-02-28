@@ -1,6 +1,5 @@
-package com.example.desafioandroid;
+package com.example.desafioandroid.adapter;
 
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,12 +9,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.desafioandroid.R;
+import com.example.desafioandroid.model.Restaurante;
+
 import java.util.List;
 
-public class RestauranteAdapter extends RecyclerView.Adapter<RestauranteAdapter.MyViewHolder> {
+public class AdapterRestaurante extends RecyclerView.Adapter<AdapterRestaurante.MyViewHolder> {
     private List<Restaurante> restaurante;
 
-    public RestauranteAdapter(List<Restaurante> listaRestaurante){
+    public AdapterRestaurante(List<Restaurante> listaRestaurante){
         this.restaurante = listaRestaurante;
     }
 
@@ -30,12 +32,11 @@ public class RestauranteAdapter extends RecyclerView.Adapter<RestauranteAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Restaurante rest = restaurante.get( position);
+        final Restaurante rest = restaurante.get( position);
         holder.nomeRestaurante.setText( rest.getNome());
         holder.enderecoRestaurante.setText( rest.getEndereco());
         holder.imagemRestaurante.setImageResource( rest.getImagem());
         holder.horarioRestaurante.setText(rest.getHorario());
-
     }
 
     @Override
@@ -44,9 +45,7 @@ public class RestauranteAdapter extends RecyclerView.Adapter<RestauranteAdapter.
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        private TextView nomeRestaurante;
-        private TextView enderecoRestaurante;
-        private TextView horarioRestaurante;
+        private TextView nomeRestaurante, enderecoRestaurante, horarioRestaurante;
         private ImageView imagemRestaurante;
 
 

@@ -1,10 +1,11 @@
-package com.example.desafioandroid;
+package com.example.desafioandroid.model;
 
-public class Restaurante {
-    private String nome;
-    private String endereco;
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Restaurante implements Parcelable {
+    private String nome, endereco, horario;
     private int imagem;
-    private String horario;
 
 
     public Restaurante(String nome, String endereco, int imagem, String horario) {
@@ -44,5 +45,15 @@ public class Restaurante {
 
     public void setHorario(String horario) {
         this.horario = horario;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+
     }
 }

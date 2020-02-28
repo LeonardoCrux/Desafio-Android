@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".views.ProfileActivity"></activity>
         <activity
-            android:name=".RestauranteActivity"
-            android:label="@string/title_activity_restaurantes"></activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity">
+            android:name=".views.RestaurantesActivity"
+            android:label="@string/title_activity_restaurante_acrivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.RegisterActivity" />
+        <activity android:name=".views.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

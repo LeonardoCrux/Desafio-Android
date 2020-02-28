@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.RegisterActivity">
-
+    tools:context=".views.ProfileActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputNomeRegister"
+        android:id="@+id/nomeProfile"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/inputEmailRegister"
+        app:layout_constraintBottom_toTopOf="@+id/emailProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -27,14 +26,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputEmailRegister"
+        android:id="@+id/emailProfile"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/inputPasswordRegister"
+        app:layout_constraintBottom_toTopOf="@+id/senhaProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -46,14 +45,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputPasswordRegister"
+        android:id="@+id/senhaProfile"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/inputRepeatPassword"
+        app:layout_constraintBottom_toTopOf="@+id/confirmarProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -61,20 +60,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword"
             android:textColor="@color/azulApp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputRepeatPassword"
+        android:id="@+id/confirmarProfile"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
-        android:layout_marginBottom="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/botaoRegister"
+        android:layout_marginBottom="218dp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -82,23 +80,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="RepeatPassword"
-            android:inputType="textPassword"
             android:textColor="@color/azulApp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/botaoRegister"
+        android:id="@+id/botaoSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="179dp"
+        android:layout_marginBottom="139dp"
         android:background="@color/laranjaLogin"
-        android:text="REGISTER"
+        android:text="SAVE PROFILE"
         android:textColor="@color/branco"
-        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

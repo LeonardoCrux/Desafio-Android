@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutRestaurante"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardRestaurante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardElevation="8dp"
@@ -28,7 +31,7 @@
                 android:id="@+id/nomeRestaurante"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tony Roma's"
+                tools:text="Tony Roma's"
                 android:textColor="@color/preto"
                 android:textSize="36sp" />
 
@@ -36,7 +39,7 @@
                 android:id="@+id/enderecoRestaurante"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
+                tools:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
                 android:textColor="@color/cinzaBotao"
                 android:textSize="18sp" />
 
@@ -44,7 +47,7 @@
                 android:id="@+id/horarioRestaurante"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha às 22:00"
+                tools:text="Fecha às 22:00"
                 android:textColor="@color/cinzaBotao"
                 android:textSize="16sp" />
         </LinearLayout>
